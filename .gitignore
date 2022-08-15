@@ -1,0 +1,76 @@
+# repos manage files
+#-----------------------
+.git/*
+.svn/*
+
+# Backup files
+#-----------------------
+
+# OS dependent files
+#-----------------------
+.DS_Store
+Thumbs.db
+
+# Github
+#---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# commit should source only
+#---------------------------
+*.bin
+*.class
+*.jar
+
+_build/*
+
+# Distoribution / packaging
+#----------------------------
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+parts/
+sdist/
+var/
+sheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environments
+#-----------------------
+.env
+.venv
+env/
+venv/
+.*env/
+
+# Installer logs
+#-----------------------
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django stuff
+#-----------------------
+*.log
+local_setting.py
+db.sqlite3
+db.sqlite3-journal
+
+# Executables
+#-----------------------
+*.exe
+*.out
+*.app
+
+# python環境
+#-----------------------
+/*env
