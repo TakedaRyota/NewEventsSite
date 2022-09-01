@@ -12,9 +12,9 @@
 {% block custom-css %}{% endblock %}
 
 {% block body %}
-<header class="bg-background">
+<header class="header-background">
   <a class="top-font" href="#">
-    <img alt="tiget" src="./image/top-tickte-icon.png"/>
+    <img alt="tiget" src="{% static 'web_view/icon/ticket_icon.svg' %}"/>
   </a>
   <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand top-font" href="./">
@@ -60,7 +60,7 @@
   </div>
 </header>
 
-<main>
+<main class="bg-background">
   {% block main-block %}{% endblock %}
 </main>
 
