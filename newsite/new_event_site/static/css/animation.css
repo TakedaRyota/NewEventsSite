@@ -1,0 +1,72 @@
+/* ==========================================
+アニメーションをまとめたファイル
+============================================= */
+
+.fadeUpAnimation01 {
+  animation-name: fadeUpAnimation01;
+  animation-duration: 1s;
+}
+@keyframes fadeUpAnimation01 {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* --- ←スライド --- */
+.slideInAnimation01 {
+  animation-name: slideInAnimation01;
+  animation-duration: 2s;
+}
+@keyframes slideInAnimation01 {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* --- →スライド --- */
+.slideInAnimation02 {
+  animation-name: slideInAnimation02;
+  animation-duration: 2s;
+}
+@keyframes slideInAnimation02 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* --- ←回転イン --- */
+.rotateInAnimation01 {
+  animation-name: rotateInAnimation01;
+  animation-duration: 1s;
+}
+@keyframes rotateInAnimation01 {
+  0% {
+    transform: translateY(-50%) translateX(200%) rotate(90deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+  }
+}
+
+/* --- →回転イン --- */
+.rotateInAnimation02 {
+  animation-name: rotateInAnimation02;
+  animation-duration: 1s;
+}
+@keyframes rotateInAnimation02 {
+  0% {
+    transform: translateY(-50%) translateX(-350%) rotate(-90deg);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  }
+}

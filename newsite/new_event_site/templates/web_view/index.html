@@ -1,9 +1,27 @@
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello World</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-  </body>
-</html>
+{% extends "web_view/base.html" %}
+{% load static %}
+
+{% block page-title %}チケット予約{% endblock %}
+
+{% block custom-js %}{% endblock %}
+
+{% block custom-css %}{% endblock %}
+
+{% block body %}
+<header>
+  <div class="ticket">
+    <a class="ticket" href="">
+      <img src=""/>
+    </a>
+  </div>
+  <div class="top-logo"></div>
+  <div class="hamburger-menu bg-primary" id="menu01">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div> 
+</header>
+
+<main>
+</main>
+{% endblock %}

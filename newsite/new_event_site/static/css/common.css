@@ -1,0 +1,88 @@
+/* ==========================================
+このファイルは全ての画面に適用するスタイルシート 
+============================================= */
+
+html, body {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+/* --- ヘッダー --- */
+header {
+  position: fixed;
+  z-index: 999;
+}
+/* --- トップロゴ --- */
+.top-font>img {
+  width: auto;
+  height: 50px;
+}
+/* --- メイン --- */
+main {
+  min-height: calc(100vh - 24px);
+  min-height: calc(100dvh - 24px);
+}
+/* --- 上部に戻る --- */
+#top-up-area {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  position: relative;
+}
+.top-up-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+/* --- フッター --- */
+footer {
+  background-color: #4e4b46;
+}
+/* --- 項目名 --- */
+.title-font {
+  color: #fff200;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  /* --- ヘッダー --- */
+  header {
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  /* --- メイン --- */
+  main {
+    padding-top: 70px;
+  }
+  /* --- 項目名 --- */
+  .title-font {
+    text-shadow: 3px 3px 0 #bcbcbc;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .hamburger-menu {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+  }
+  /* --- 項目名 --- */
+  .title-font {
+    text-shadow: 1px 1px 0 #bcbcbc;
+  }
+}
