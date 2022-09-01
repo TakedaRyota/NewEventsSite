@@ -13,6 +13,10 @@ header {
   position: fixed;
   z-index: 999;
 }
+a {
+  text-decoration: none;
+  color: #000000;
+}
 /* --- トップロゴ --- */
 .top-font>img {
   width: auto;
