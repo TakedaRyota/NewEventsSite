@@ -13,15 +13,15 @@
 ### Mac
 
 ```
-$ source reserve_env/bin/activate
-$ python reserve_tool/manage.py runserver
+$ source env/bin/activate
+$ python newsite/manage.py runserver
 ```
 
 ### Windows 
 
 ``` 
-$ reserve_env¥Scripts¥activate
-$ python reserve_tool/manage.py runserver
+$ env¥Scripts¥activate
+$ python newsite/manage.py runserver
 ```
 
 ### 起動確認
