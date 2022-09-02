@@ -4,8 +4,34 @@
 
 /* --- トップエリア --- */
 .top-area {
+  position: relative;
   width: 100vw;
   height: 100vh;
+}
+.event-title-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+.event-title-area>* {
+  transform: rotateZ(340deg);
+  font-size: 10vh;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.event-title-01 {
+  
+}
+.event-title-02 {
+  
+}
+.event-title-03 {
+
+}
+.event-title-04 {
+  text-align: right;
 }
 /* --- 会場広告 --- */
 .link-img {
