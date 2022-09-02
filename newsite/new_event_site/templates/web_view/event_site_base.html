@@ -1,0 +1,70 @@
+{% extends "web_view/base.html" %}
+{% load static %}
+
+{% block page-title %}IDOL Dreaming Station{% endblock %}
+
+{% block lib-js %}{% endblock %}
+
+{% block custom-js %}{% endblock %}
+
+{% block lib-css %}{% endblock %}
+
+{% block custom-css %}{% endblock %}
+
+{% block body %}
+<header class="header-background">
+  <a class="top-font" href="#">
+    <img alt="tiget" src="{% static 'web_view/icon/ticket_icon.svg' %}"/>
+  </a>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand top-font" href="./">
+      <img alt="Eventロゴ" src="./image/top-center-logo.png"/>
+    </a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./about/">About
+          <div>開催概要</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./event/">Artist
+          <div>出演アーティスト</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./timetable/">Time Table
+          <div>タイムテーブル</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./ticket/">Ticket
+          <div>チケット</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./ticket/">Access
+          <div>アクセス</div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./guideline/">Guideline
+          <div>ガイドライン</div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="hamburger-menu" id="menu01">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<main class="bg-background">
+  {% block main-block %}{% endblock %}
+</main>
+
+<footer>
+  <div class="text-center text-white">主催 : IDOL Dreaming Station 実行委員 / 制作 : LIVE FIRST</div>
+</footer>
+{% endblock %}

@@ -6,25 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Cache-Control" content="no-cache">
   <title>{% block page-title %}{% endblock %}</title>
-  
+  <link rel="icon" href="./favicon.ico">
   <!-- ライブラリjs -->
-  <script src="{% static 'new_event_site/libs/js/jquery-3.6.0.min.js' %}"></script>
-  <script src="{% static 'new_event_site/libs/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'web_view/libs/js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'web_view/libs/js/bootstrap.min.js' %}"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/nav.js"></script>
   {% block lib-js %}{% endblock %}
   <!-- カスタムjs -->
   {% block custom-js %}{% endblock %}
   <!-- ライブラリcss -->
-  <link rel="stylesheet" type="text/css" href="{% static 'new_event_site/libs/css/bootstrap.min.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'new_event_site/css/common.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'new_event_site/css/color.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'new_event_site/css/animation.css' %}">
-  <link rel="stylesheet" type="text/css" href="{% static 'new_event_site/css/hamburger.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'web_view/libs/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'web_view/css/common.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'web_view/css/color.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'web_view/css/animation.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'web_view/css/hamburger.css' %}">
   {% block lib-css %}{% endblock %}
   <!-- カスタムcss -->
   {% block custom-css %}{% endblock %}
 
 </head>
-<body>
+<body class="bg-black">
   {% block body %}{% endblock %}
 </body>
 </html>

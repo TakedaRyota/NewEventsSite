@@ -2,8 +2,11 @@
 カラークラス定義のスタイルシート 
 ============================================= */
 
+.header-background {
+  background-color: #ffffffb9;
+}
 .bg-background {
-  background-color: #260d00;
+  background-color: #000000;
   color: #ffffff;
 }
 .bg-card {
