@@ -73,7 +73,7 @@ footer {
   margin-right: 0;
 }
 .row>* {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 @media (min-width: 992px) {
   /* --- ヘッダー --- */
