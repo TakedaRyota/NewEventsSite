@@ -13,12 +13,9 @@
 
 {% block body %}
 <header class="header-background">
-  <a class="top-font" href="#">
-    <img alt="tiget" src="{% static 'web_view/icon/ticket_icon.svg' %}"/>
-  </a>
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand top-font" href="./">
-      <img alt="Eventロゴ" src="./image/top-center-logo.png"/>
+  <nav class="navbar navbar-expand-lg p-0">
+    <a class="navbar-brand top-logo" href="./">
+      {% include 'web_view/icon/ticket_icon.html' %}
     </a>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">

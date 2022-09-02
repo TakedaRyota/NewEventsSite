@@ -12,20 +12,22 @@ html, body {
 header {
   position: fixed;
   z-index: 999;
+  width: 100%;
 }
 a {
   text-decoration: none;
   color: #ffffff;
 }
 /* --- トップロゴ --- */
-.top-font>img {
+.top-logo {
   width: auto;
-  height: 50px;
+  padding: 0 10px;
 }
 /* --- メイン --- */
 main {
-  min-height: calc(100vh - 24px);
-  min-height: calc(100dvh - 24px);
+  z-index: 1;
+  min-height: calc(100vh - 50px);
+  min-height: calc(100dvh - 50px);
 }
 /* --- 上部に戻る --- */
 #top-up-area {
@@ -47,14 +49,31 @@ footer {
 }
 /* --- 項目名 --- */
 .title-font {
+  position: relative;
   color: #fff200;
   font-weight: bold;
-  padding-top: 50px;
-  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 4vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title-ja {
+  color: #ffffff;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  font-size: 1.5vw;
+}
+.title-font, .title-ja {
+  text-align: center;
 }
 .row {
   margin-left: 0;
   margin-right: 0;
+}
+.row>* {
+  padding-top: 10px;
 }
 @media (min-width: 992px) {
   /* --- ヘッダー --- */
@@ -63,6 +82,9 @@ footer {
   }
   .hamburger-menu {
     display: none;
+  }
+  .top-logo {
+    height: 80px;
   }
   /* --- メイン --- */
   main {
@@ -74,16 +96,19 @@ footer {
   }
 }
 @media (max-width: 992px) {
-  .navbar {
+  .navbar-nav {
     display: none;
   }
-  .navbar.active {
+  .navbar-nav.active {
     display: block;
   }
   .hamburger-menu {
     position: absolute !important;
     top: 0;
     right: 0;
+  }
+  .top-logo {
+    height: 50px;
   }
   /* --- 項目名 --- */
   .title-font {

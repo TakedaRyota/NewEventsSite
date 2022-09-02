@@ -10,8 +10,8 @@
   <!-- ライブラリjs -->
   <script src="{% static 'web_view/libs/js/jquery-3.6.0.min.js' %}"></script>
   <script src="{% static 'web_view/libs/js/bootstrap.min.js' %}"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/nav.js"></script>
+  <script src="{% static 'web_view/js/common.js' %}"></script>
+  <script src="{% static 'web_view/js/nav.js' %}"></script>
   {% block lib-js %}{% endblock %}
   <!-- カスタムjs -->
   {% block custom-js %}{% endblock %}

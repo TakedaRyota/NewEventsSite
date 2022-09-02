@@ -1,0 +1,39 @@
+/* ==========================================
+このファイルはメイン画面に適用するスタイルシート 
+============================================= */
+
+/* --- トップエリア --- */
+.top-area {
+  width: 100vw;
+  height: 100vh;
+}
+/* --- 会場広告 --- */
+.link-img {
+  width: 80%;
+  height: 80px;
+  margin: 0 10%;
+  background-color: aquamarine;
+}
+/* --- お知らせ --- */
+.news-area {
+  padding: 10px;
+  background-color: #3c3c3c;
+}
+/* --- トピックコンテンツ --- */
+.topic-content-area {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+}
+.neon-content {
+  box-shadow:
+    0 0 7px #ffffff,
+    0 0 10px #ffffff,
+    0 0 21px #ffffff,
+    0 0 42px #e210e2,
+    0 0 82px #e210e2,
+    0 0 92px #e210e2,
+    0 0 102px #e210e2,
+    0 0 151px #e210e2;
+}
