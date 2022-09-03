@@ -12,3 +12,66 @@
 .bg-card {
   background-color: #b9b9b9;
 }
+/* --- 共通 --- */
+.bg-color {
+  background-color: var(--color);
+}
+.text-color {
+  color: var(--color);
+}
+/* --- ネオン --- */
+.neon-01 {
+  --color: #ffacfc;
+}
+.neon-02 {
+  --color: #f148fb;
+}
+.neon-03 {
+  --color: #7122fa;
+}
+.neon-04 {
+  --color: #560a86;
+}
+.neon-05 {
+  --color: #01ffc3;
+}
+.neon-06 {
+  --color: #00ffff;
+}
+.neon-07 {
+  --color: #ffb3fd;
+}
+.neon-08 {
+  --color: #9d72ff;
+}
+.neon-09 {
+  --color: #fcf340;
+}
+.neon-10 {
+  --color: #7fff00;
+}
+.neon-11 {
+  --color: #fb33db;
+}
+.neon-12 {
+  --color: #0310ea;
+}
+.neon-13 {
+  --color: #1fffff;
+}
+
+
+/* --- ネオンテキストカラー --- */
+.neon-text-pattern-01 {
+  text-shadow:
+    0 0 2px #ffffff,
+    0 0 4px #ffffff,
+    0 0 6px #ffffff,
+    0 0 8px #ffffff,
+    0 0 10px var(--color),
+    0 0 14px var(--color),
+    0 0 18px var(--color),
+    0 0 20px var(--color),
+    0 0 24px var(--color);
+  color: var(--color);
+}

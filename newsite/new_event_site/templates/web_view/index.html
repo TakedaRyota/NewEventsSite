@@ -8,22 +8,24 @@
 {% block main-block %}
 <div class="top-area">
   <div class="event-title-area">
-    <div class="event-title-01">IDOL</div>
-    <div class="event-title-02">Dreaming</div>
-    <div class="event-title-03">Station</div>
-    <div class="event-title-04">Vol.3</div>
+    <div class="neon-text-pattern-01 neon-02">IDOL</div>
+    <div class="neon-text-pattern-01 neon-05">Dreaming</div>
+    <div class="neon-text-pattern-01 neon-08">Station</div>
+    <div class="neon-text-pattern-01 neon-07 text-end">Vol.3</div>
   </div>
 </div>
 <a class="place-link" href="https://unravel-tokyo.com/">
-  <div class="link-img"></div>
+  <div class="link-img">
+    <img alt="会場サイト" src="{% static 'web_view/image/unravel_img.jpeg' %}"></img>
+  </div>
 </a>
-<div class="news-area">
+<div class="news-area mt-3">
   <div class="title-font">NEWS
     <div class="title-ja">お知らせ</div>
   </div>
 
 </div>
-<div class="topics-area">
+<div class="topics-area mt-3">
   <div class="title-font">TOPICS
     <div class="title-ja">トピック</div>
   </div>
@@ -31,49 +33,66 @@
     <div class="row">
       <a class="col" href="#">
         <div class="topic-content-area neon-content">
-          <div>About/開催概要</div>
-          <svg></svg>
+          <div class="topic-logo-area">
+            {% include 'web_view/icon/about_icon.html' %}
+          </div>
+          <div class="topic-content-english-text">About</div>
+          <div>開催概要</div>
         </div>
       </a>
       <a class="col" href="#">
         <div class="topic-content-area neon-content">
-          <div>Artist/出演アーティスト</div>
-          <svg></svg>
+          <div class="topic-logo-area">
+            {% include 'web_view/icon/artist_icon.html' %}
+          </div>
+          <div class="topic-content-english-text">Artist</div>
+          <div>出演アーティスト</div>
         </div>
       </a>
       <a class="col" href="#">
         <div class="topic-content-area neon-content">
-          <div>TimeTable/タイムテーブル</div>
-          <svg></svg>
+          <div class="topic-logo-area">
+            {% include 'web_view/icon/timetable_icon.html' %}
+          </div>
+          <div class="topic-content-english-text">Time table</div>
+          <div>タイムテーブル</div>
         </div>
       </a>
       <a class="col" href="#">
         <div class="topic-content-area neon-content">
-          <div>Tickt/チケット</div>
-          <svg></svg>
+          <div class="topic-logo-area">
+            {% include 'web_view/icon/ticket2_icon.html' %}
+          </div>
+          <div class="topic-content-english-text">Ticket</div>
+          <div>チケット</div>
         </div>
       </a>
       <a class="col" href="#">
         <div class="topic-content-area neon-content">
-          <div>Access/アクセス</div>
-          <svg></svg>
+          <div class="topic-logo-area">
+            {% include 'web_view/icon/access_icon.html' %}
+          </div>
+          <div class="topic-content-english-text">Access</div>
+          <div>アクセス</div>
         </div>
       </a>
       <a class="col" href="#">
         <div class="topic-content-area neon-content">
-          <div>Guideline/注意事項・感染症対策</div>
-          <svg></svg>
+          <div class="topic-logo-area">
+            {% include 'web_view/icon/guideline_icon.html' %}
+          </div>
+          <div class="topic-content-english-text">Guideline</div>
+          <div>注意事項・感染症対策</div>
         </div>
       </a>
     </div>
   </div>
 </div>
-<div class="twitter-area">
+<div class="twitter-area mt-3">
   <div class="title-font">TWITTER
-    <div class="title-ja">ツイッター</div>
+    <div class="title-ja">公式ツイッター</div>
   </div>
 
 </div>
-<button class="scroll-top" type="button">TOP</button>
 {% endblock %}
   

@@ -40,3 +40,9 @@ $ python manage.py migrate
 ```
 $ python manage.py createsuperuser
 ```
+
+## アイコン
+https://icooon-mono.com/
+
+## カラーサイト
+https://www.shutterstock.com/ja/blog/neon-color-palettes
