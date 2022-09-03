@@ -1,0 +1,59 @@
+/* ==========================================
+このファイルは全ての画面に適用するスタイルシート 
+============================================= */
+
+@media (min-width: 992px) {
+  /* --- ナビ --- */
+  .nav-link {
+    padding: 0 1rem !important;
+    font-size: large;
+    color: #4f4f4f;
+    text-align: center;
+  }
+  .nav-link>div {
+    visibility: hidden;
+    font-size: small;
+    border-top: solid 1px #8f04fd;
+  }
+  .nav-item:hover {
+    transition : all 0.5s ease 0s;
+    background-color: #ffffff9f;
+  }
+  .nav-item:hover>.nav-link>div {
+    transition : all 0.5s ease 0s;
+    visibility: inherit;
+  }
+  .nav-item:hover>.nav-link,
+  .nav-item:hover>.nav-link>div {
+    transition : all 0.5s ease 0s;
+    color: #8f04fd;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none;
+  }
+  .navbar-nav.active {
+    display: block;
+    height: 100vh;
+    height: 100dvh;
+  }
+  .nav-link {
+    padding: 0 1rem !important;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: left;
+  }
+  .nav-link>div {
+    font-size: small;
+  }
+  .nav-item {
+    width: 100vw;
+  }
+  .nav-item:nth-child(2n) {
+    background-color: #29dbff;
+  }
+  .nav-item:nth-child(2n+1) {
+    background-color: #383838;
+  }
+}

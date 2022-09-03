@@ -21,24 +21,19 @@
   font-weight: bold;
   line-height: 1.2;
 }
-.event-title-01 {
-  
-}
-.event-title-02 {
-  
-}
-.event-title-03 {
-
-}
 .event-title-04 {
   text-align: right;
 }
 /* --- 会場広告 --- */
 .link-img {
-  width: 80%;
-  height: 80px/*auto*/;
+  max-width: 80%;
+  height: 100px;
   margin: 0 10%;
-  background-color: aquamarine;
+  text-align: center;
+}
+.link-img>img {
+  width: auto;
+  height: 100px;
 }
 /* --- お知らせ --- */
 .news-area {
@@ -47,19 +42,29 @@
 }
 /* --- トピックコンテンツ --- */
 .topic-content-area {
+  min-width: 300px;
   text-align: center;
   background-color: #ffffff;
   border-radius: 10px;
   color: #000000;
+  padding: 20px 10px;
 }
 .neon-content {
   border: solid 2px #e210e2;
   box-shadow:
     0 0 2px #ffffff,
-    0 0 4px #e210e2,
+    0 0 4px #ffffff,
     0 0 6px #e210e2,
     0 0 6px #e210e2,
     0 0 6px #e210e2,
     0 0 8px #e210e2,
     0 0 10px #e210e2;
+}
+.topic-logo-area>svg {
+  width: 40%;
+  height: auto;
+}
+.topic-content-english-text {
+  font-weight: bold;
+  font-size: 30px;
 }

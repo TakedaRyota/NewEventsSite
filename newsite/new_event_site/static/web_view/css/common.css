@@ -23,6 +23,10 @@ a {
   width: auto;
   padding: 0 10px;
 }
+.top-logo>svg {
+  width: auto;
+  height: 100%;
+}
 /* --- メイン --- */
 main {
   z-index: 1;
@@ -53,8 +57,8 @@ footer {
   color: #fff200;
   font-weight: bold;
   margin-top: 10px;
-  font-size: 4vw;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .title-ja {
   color: #ffffff;
@@ -63,7 +67,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
-  font-size: 1.5vw;
+  font-size: 5px;
 }
 .title-font, .title-ja {
   text-align: center;
@@ -74,6 +78,25 @@ footer {
 }
 .row>* {
   padding-top: 20px;
+}
+.scroll-top {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #4e4b46;
+  color: #ffffff;
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+}
+.scroll-top > .triangle {
+  width: 0;
+  height: 20px;
+  border-right: solid 18px transparent;
+  border-bottom: solid 18px #ffffff;
+  border-left: solid 18px transparent;
 }
 @media (min-width: 992px) {
   /* --- ヘッダー --- */
@@ -86,22 +109,8 @@ footer {
   .top-logo {
     height: 80px;
   }
-  /* --- メイン --- */
-  main {
-    padding-top: 70px;
-  }
-  /* --- 項目名 --- */
-  .title-font {
-    text-shadow: 3px 3px 0 #bcbcbc;
-  }
 }
 @media (max-width: 992px) {
-  .navbar-nav {
-    display: none;
-  }
-  .navbar-nav.active {
-    display: block;
-  }
   .hamburger-menu {
     position: absolute !important;
     top: 0;
@@ -110,8 +119,7 @@ footer {
   .top-logo {
     height: 50px;
   }
-  /* --- 項目名 --- */
-  .title-font {
-    text-shadow: 1px 1px 0 #bcbcbc;
+  .top-logo.active {
+    display: none;
   }
 }
