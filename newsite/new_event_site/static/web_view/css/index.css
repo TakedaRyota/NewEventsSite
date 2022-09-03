@@ -24,6 +24,14 @@
 .event-title-04 {
   text-align: right;
 }
+.overview-top {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff97;
+  color: #000000;
+}
 /* --- 会場広告 --- */
 .link-img {
   max-width: 80%;
@@ -40,6 +48,11 @@
   padding: 10px;
   background-color: #3c3c3c;
 }
+.news-content-area {
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+}
 /* --- トピックコンテンツ --- */
 .topic-content-area {
   min-width: 300px;
@@ -48,6 +61,10 @@
   border-radius: 10px;
   color: #000000;
   padding: 20px 10px;
+}
+.topic-content-area:hover {
+  background-color: #9d72ff;
+  color: #ffffff;
 }
 .neon-content {
   border: solid 2px #e210e2;
@@ -67,4 +84,9 @@
 .topic-content-english-text {
   font-weight: bold;
   font-size: 30px;
+}
+/* --- ツイッター --- */
+.twitter-area {
+  background-color: #3c3c3c;
+  padding: 10px;
 }
