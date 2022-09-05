@@ -8,7 +8,7 @@ $(function() {
    */
   $('.hamburger-menu').on('click', function() {
     $(this).toggleClass('active');
-    $('.navbar-nav .top-logo').toggleClass('active');
+    $('.navbar-nav, .top-logo').toggleClass('active');
     return false;
   });
 
