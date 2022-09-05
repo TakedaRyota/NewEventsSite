@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block main-block %}
-<div id="guideline-page" class="container-sm">
+<div id="guideline-page" class="container-sm content-page">
   <div class="card">
     <div class="card-header ticket-header-top fs-3">
       ガイドライン
@@ -22,7 +22,8 @@
       <div id="covid-guideline" class="row">
         <div class="col">
           <div class="card text-center">
-            <img class="card-img-top" src="..." alt="声だし">
+            <div class="card-header fw-bold">声出し</div>
+            <img class="card-img-top" src="{% static 'web_view/image/kansensho_6.png' %}" alt="声だし">
             <div class="card-body">
               <p class="card-text">OK</p>
             </div>
@@ -30,7 +31,8 @@
         </div>
         <div class="col">
           <div class="card text-center">
-            <img class="card-img-top" src="..." alt="個人情報記入">
+            <div class="card-header fw-bold">個人情報記入</div>
+            <img class="card-img-top" src="{% static 'web_view/image/kansensho_2.png' %}" alt="個人情報記入">
             <div class="card-body">
               <p class="card-text">必須</p>
             </div>
@@ -38,7 +40,8 @@
         </div>
         <div class="col">
           <div class="card text-center">
-            <img class="card-img-top" src="..." alt="マスクの着用">
+            <div class="card-header fw-bold">マスクの着用</div>
+            <img class="card-img-top" src="{% static 'web_view/image/kansensho_5.png' %}" alt="マスクの着用">
             <div class="card-body">
               <p class="card-text">必須</p>
             </div>
@@ -46,15 +49,8 @@
         </div>
         <div class="col">
           <div class="card text-center">
-            <img class="card-img-top" src="..." alt="飲食">
-            <div class="card-body">
-              <p class="card-text">可</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card text-center">
-            <img class="card-img-top" src="..." alt="検温">
+            <div class="card-header fw-bold">検温</div>
+            <img class="card-img-top" src="{% static 'web_view/image/kansensho_1.png' %}" alt="検温">
             <div class="card-body">
               <p class="card-text">必須</p>
             </div>
@@ -62,7 +58,8 @@
         </div>
         <div class="col">
           <div class="card text-center">
-            <img class="card-img-top" src="..." alt="手指消毒">
+            <div class="card-header fw-bold">手指の消毒</div>
+            <img class="card-img-top" src="{% static 'web_view/image/kansensho_3.png' %}" alt="手指消毒">
             <div class="card-body">
               <p class="card-text">必須</p>
             </div>
