@@ -2,19 +2,9 @@
 このファイルはチケット画面に適用するスタイルシート 
 ============================================= */
 
-#ticket-page {
-  padding-top: 100px;
-}
-#ticket-page > * {
-  color: #000000;
-}
 .ticket-header-top {
   font-weight: bold;
   text-align: center;
-}
-#ticket-page .card-title {
-  border-bottom: solid 1px #000000;
-  padding-left: 5px;
 }
 .s-ticket-color {
   width: fit-content;
