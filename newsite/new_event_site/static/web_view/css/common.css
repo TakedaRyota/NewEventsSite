@@ -33,6 +33,13 @@ main {
   min-height: calc(100vh - 24px);
   min-height: calc(100dvh - 24px);
 }
+/* --- viewエリア --- */
+.view-area {
+  display: none;
+}
+.view-area.show {
+  display: block;
+}
 /* --- 上部に戻る --- */
 #top-up-area {
   width: 100%;
@@ -109,6 +116,9 @@ footer {
 /* --- カード内 --- */
 .card > * {
   color: #000000;
+}
+.card-text > * {
+  color: black;
 }
 .card-title {
   border-bottom: solid 1px #000000;

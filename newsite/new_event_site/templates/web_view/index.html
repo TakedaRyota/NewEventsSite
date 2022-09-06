@@ -3,10 +3,12 @@
 
 {% block custom-css %}
 <link rel="stylesheet" type="text/css" href="{% static 'web_view/css/index.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web_view/css/ticket.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'web_view/css/guideline.css' %}">
 {% endblock %}
 
 {% block main-block %}
-<div class="top-area">
+<div id="top-view" class="top-area view-area show">
   <div class="event-title-area">
     <div class="neon-text-pattern-01 neon-02">IDOL</div>
     <div class="neon-text-pattern-01 neon-14">Dreaming</div>
@@ -52,7 +54,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <a class="col" href="#">
+      <a class="col change-view" href="#about-view">
         <div class="topic-content-area neon-content">
           <div class="topic-logo-area">
             {% include 'web_view/icon/about_icon.html' %}
@@ -61,7 +63,7 @@
           <div>開催概要</div>
         </div>
       </a>
-      <a class="col" href="#">
+      <a class="col change-view" href="#artist-view">
         <div class="topic-content-area neon-content">
           <div class="topic-logo-area">
             {% include 'web_view/icon/artist_icon.html' %}
@@ -70,7 +72,7 @@
           <div>出演アーティスト</div>
         </div>
       </a>
-      <a class="col" href="#">
+      <a class="col change-view" href="#timetable-view">
         <div class="topic-content-area neon-content">
           <div class="topic-logo-area">
             {% include 'web_view/icon/timetable_icon.html' %}
@@ -79,7 +81,7 @@
           <div>タイムテーブル</div>
         </div>
       </a>
-      <a class="col" href="#">
+      <a class="col change-view" href="#ticket-view">
         <div class="topic-content-area neon-content">
           <div class="topic-logo-area">
             {% include 'web_view/icon/ticket2_icon.html' %}
@@ -88,7 +90,7 @@
           <div>チケット</div>
         </div>
       </a>
-      <a class="col" href="#">
+      <a class="col change-view" href="#access-view">
         <div class="topic-content-area neon-content">
           <div class="topic-logo-area">
             {% include 'web_view/icon/access_icon.html' %}
@@ -97,7 +99,7 @@
           <div>アクセス</div>
         </div>
       </a>
-      <a class="col" href="#">
+      <a class="col change-view" href="#guideline-view">
         <div class="topic-content-area neon-content">
           <div class="topic-logo-area">
             {% include 'web_view/icon/guideline_icon.html' %}
@@ -114,7 +116,30 @@
     <div class="title-ja">公式ツイッター</div>
     <div class="container"></div>
   </div>
+</div>
 
+<div id="about-view" class="container-sm content-page view-area">
+  {% include 'web_view/about/index.html' %}
+</div>
+
+<div id="artist-view" class="container-sm content-page view-area">
+  {% include 'web_view/artist/index.html' %}
+</div>
+
+<div id="timetable-view" class="container-sm content-page view-area">
+  {% include 'web_view/timetable/index.html' %}
+</div>
+
+<div id="ticket-view" class="container-sm content-page view-area">
+  {% include 'web_view/ticket/index.html' %}
+</div>
+
+<div id="access-view" class="container-sm content-page view-area">
+  {% include 'web_view/access/index.html' %}
+</div>
+
+<div id="guideline-view" class="container-sm content-page view-area">
+  {% include 'web_view/guideline/index.html' %}
 </div>
 {% endblock %}
   

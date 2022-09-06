@@ -1,48 +1,38 @@
-{% extends "web_view/event_site_base.html" %}
 {% load static %}
-
-{% block custom-css %}
-<link rel="stylesheet" type="text/css" href="{% static 'web_view/css/ticket.css' %}">
-{% endblock %}
-
-{% block main-block %}
-<div id="ticket-page" class="container-sm content-page">
-  <div class="card">
-    <div class="card-header content-header-top fs-3">
-      TICKET
+<div class="card">
+  <div class="card-header content-header-top fs-3">
+    TICKET
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">券種</h4>
+    <div class="row">
+      <div class="col">
+        <!--エリア画像-->
+      </div>
+      <div class="col">
+        <div class="row">
+          <div>
+            <div class="s-ticket-color fw-bold">Sチケット</div>
+            <p class="m-0 ps-2">前売 > 3,500円</p>
+            <p class="m-0 ps-2">当日 > 4,000円</p>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <div class="a-ticket-color fw-bold">Aチケット</div>
+            <p class="m-0 ps-2">前売 > 2,500円</p>
+            <p class="m-0 ps-2">当日 > 3,000円</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-body">
-      <h4 class="card-title">券種</h4>
-      <div class="row">
-        <div class="col">
-          <!--エリア画像-->
-        </div>
-        <div class="col">
-          <div class="row">
-            <div>
-              <div class="s-ticket-color fw-bold">Sチケット</div>
-              <p class="m-0 ps-2">前売 > 3,500円</p>
-              <p class="m-0 ps-2">当日 > 4,000円</p>
-            </div>
-          </div>
-          <div class="row">
-            <div>
-              <div class="a-ticket-color fw-bold">Aチケット</div>
-              <p class="m-0 ps-2">前売 > 2,500円</p>
-              <p class="m-0 ps-2">当日 > 3,000円</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h4 class="card-title">販売</h4>
-      <div class="row text-center">
-        <iframe class="tiget-link"></iframe>
-      </div>
-      <div class="card-text sales-period">
-        <span class="fw-bold">販売期間</span>
-        2022年9月12日(月)21:00～2022年10月4日(水)23:59  
-      </div>
+    <h4 class="card-title">販売</h4>
+    <div class="row text-center">
+      <iframe class="tiget-link"></iframe>
+    </div>
+    <div class="card-text sales-period">
+      <span class="fw-bold">販売期間</span>
+      2022年9月12日(月)21:00～2022年10月4日(水)23:59  
     </div>
   </div>
 </div>
-{% endblock %}

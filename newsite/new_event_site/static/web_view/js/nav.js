@@ -24,4 +24,8 @@ $(function() {
     }
   });
 
+  $('.change-view').on('click', function () {
+    $('.show').removeClass('show');
+    $($(this).attr('href')).addClass('show');
+  });
 });
