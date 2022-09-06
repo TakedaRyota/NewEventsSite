@@ -30,8 +30,8 @@ a {
 /* --- メイン --- */
 main {
   z-index: 1;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: calc(100vh - 24px);
+  min-height: calc(100dvh - 24px);
 }
 /* --- 上部に戻る --- */
 #top-up-area {
@@ -113,6 +113,12 @@ footer {
 .card-title {
   border-bottom: solid 1px #000000;
   padding-left: 5px;
+}
+/* --- カミングスーン --- */
+.com-soon {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
 }
 @media (min-width: 1400px) {
   .content-page {
