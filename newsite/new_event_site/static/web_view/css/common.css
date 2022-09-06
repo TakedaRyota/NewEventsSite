@@ -102,6 +102,10 @@ footer {
 .content-page {
   padding-top: 100px;
 }
+.content-header-top {
+  font-weight: bold;
+  text-align: center;
+}
 /* --- カード内 --- */
 .card > * {
   color: #000000;

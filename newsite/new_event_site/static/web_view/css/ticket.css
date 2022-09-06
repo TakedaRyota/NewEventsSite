@@ -2,10 +2,6 @@
 このファイルはチケット画面に適用するスタイルシート 
 ============================================= */
 
-.ticket-header-top {
-  font-weight: bold;
-  text-align: center;
-}
 .s-ticket-color {
   width: fit-content;
   padding: 2px 2rem;
