@@ -30,8 +30,8 @@ a {
 /* --- メイン --- */
 main {
   z-index: 1;
-  min-height: calc(100vh - 50px);
-  min-height: calc(100dvh - 50px);
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 /* --- 上部に戻る --- */
 #top-up-area {
