@@ -22,4 +22,5 @@ from new_event_site import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('IdolDreamingStation/vol3/', views.vol3, name='vol3'),
 ]

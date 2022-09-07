@@ -6,5 +6,6 @@ app_name = 'new_event_site'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('IdolDreamingStation/vol3/', views.vol3),
     path('', views.index),
 ]

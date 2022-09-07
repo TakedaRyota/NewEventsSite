@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
-def index(request):
-    return render(request, 'web_view/index.html')
+def vol3(request):
+    return render(request, 'web_view/IdolDreamingStation/vol3/index.html')
 
-    
+def index(request):
+    return render(request, 'web_view/index.html')    
