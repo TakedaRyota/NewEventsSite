@@ -1,0 +1,92 @@
+/* ==========================================
+このファイルはメイン画面に適用するスタイルシート 
+============================================= */
+
+/* --- トップエリア --- */
+.top-area {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.event-title-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+.event-title-area>* {
+  transform: rotateZ(340deg);
+  font-size: 10vh;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.event-title-04 {
+  text-align: right;
+}
+.overview-top {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff97;
+  color: #000000;
+}
+/* --- 会場広告 --- */
+.link-img {
+  max-width: 80%;
+  height: 100px;
+  margin: 0 10%;
+  text-align: center;
+}
+.link-img>img {
+  width: auto;
+  height: 100px;
+}
+/* --- お知らせ --- */
+.news-area {
+  padding: 10px;
+  background-color: #3c3c3c;
+}
+.news-content-area {
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+}
+/* --- トピックコンテンツ --- */
+.topic-content-area {
+  min-width: 300px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  padding: 20px 10px;
+}
+.topic-content-area:hover {
+  background-color: #9d72ff;
+  color: #ffffff;
+}
+.neon-content {
+  border: solid 2px #e210e2;
+  box-shadow:
+    0 0 2px #ffffff,
+    0 0 4px #ffffff,
+    0 0 6px #e210e2,
+    0 0 6px #e210e2,
+    0 0 6px #e210e2,
+    0 0 8px #e210e2,
+    0 0 10px #e210e2;
+}
+.topic-logo-area>svg {
+  width: 40%;
+  height: auto;
+}
+.topic-content-english-text {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* --- ツイッター --- */
+.twitter-area {
+  background-color: #3c3c3c;
+  padding: 10px;
+}
