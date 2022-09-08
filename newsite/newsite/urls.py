@@ -24,4 +24,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('IdolDreamingStation/', views.idol_dreaming_station),
     path('IdolDreamingStation/vol3/', views.vol3, name='vol3'),
+    path('20221124/', views.copy_dance_event),
 ]

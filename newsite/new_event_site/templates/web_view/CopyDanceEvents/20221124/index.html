@@ -1,0 +1,57 @@
+{% extends "web_view/base.html" %}
+{% load static %}
+
+{% block page-title %}IDOL Dreaming Station{% endblock %}
+
+{% block lib-js %}{% endblock %}
+
+{% block custom-js %}{% endblock %}
+
+{% block lib-css %}{% endblock %}
+
+{% block custom-css %}
+<link rel="stylesheet" type="text/css" href="{% static 'web_view/css/IdolDreamingStation/index.css' %}">
+{% endblock %}
+
+{% block body %}
+<main class="bg-background">
+  <div class="top-area">
+    <div class="event-title-area">
+      <div class="neon-text-pattern-01 neon-02">LIVE FIRST</div>
+      <div class="neon-text-pattern-01 neon-14">at</div>
+      <div class="neon-text-pattern-01 neon-08">unravel TOKYO</div>
+    </div>
+  </div>
+
+  <div class="news-area mt-3">
+    <div class="title-font">EVENTS
+      <div class="title-ja">イベント一覧</div>
+    </div>
+    <din class="container">
+      <div class="row">
+        <div class="col">
+          <a class="card" href="./vol3/" target="_blank">
+            <div class="card-header fw-bold text-center">Idol Dreaming Station Vol.3</div>
+            <div class="card-body">
+              <div class="card-text">2022年10月5日（水）</div>
+              <div class="card-text">unravel TOKYO</div>
+              <div class="card-text">開場/ 17:30  開演/ 18:00</div>
+              <div class="card-text">出演/ </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </din>
+  </div>
+
+
+  <button class="scroll-top" type="button">
+    <div class="triangle"></div>
+    TOP
+  </button>
+</main>
+  
+<footer>
+  <div class="text-center text-white">企画・制作 : LIVE FIRST</div>
+</footer>
+{% endblock %}

@@ -9,6 +9,7 @@ urlpatterns = [
     path('', views.index),
     path('IdolDreamingStation/', views.idol_dreaming_station),
     path('IdolDreamingStation/vol3/', views.vol3),
+    path('20221124/', views.copy_dance_event),
     
     
 ]
