@@ -2,6 +2,12 @@
 このファイルはメイン画面に適用するスタイルシート 
 ============================================= */
 
+.title-font {
+  color: #fff200;
+}
+.title-ja {
+  color: #ffffff;
+}
 /* --- トップエリア --- */
 .top-area {
   position: relative;

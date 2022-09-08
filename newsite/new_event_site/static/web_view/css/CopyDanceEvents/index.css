@@ -2,6 +2,19 @@
 このファイルはメイン画面に適用するスタイルシート 
 ============================================= */
 
+.bg-custom-background {
+  background-color: #ffffff;
+  color: #000000;
+}
+/* --- 項目名 --- */
+.title-font {
+  color: #e210e2;
+}
+.title-ja {
+}
+.title-font, .title-ja {
+  text-align: center;
+}
 /* --- トップエリア --- */
 .top-area {
   position: relative;
@@ -16,7 +29,6 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
 }
 .event-title-area>* {
-  transform: rotateZ(340deg);
   font-size: 10vh;
   font-weight: bold;
   line-height: 1.2;

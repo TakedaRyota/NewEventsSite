@@ -12,6 +12,12 @@
 .bg-card {
   background-color: #b9b9b9;
 }
+.text-white {
+  color: #ffffff;
+}
+.text-black {
+  color: #000000;
+}
 /* --- 共通 --- */
 .bg-color {
   background-color: var(--color);
