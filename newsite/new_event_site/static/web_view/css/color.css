@@ -12,12 +12,28 @@
 .bg-card {
   background-color: #b9b9b9;
 }
+.text-white {
+  color: #ffffff;
+}
+.text-black {
+  color: #000000;
+}
 /* --- 共通 --- */
 .bg-color {
   background-color: var(--color);
 }
 .text-color {
   color: var(--color);
+}
+/* --- ベーシック --- */
+.basic-black {
+  --color: #000000;
+}
+.basic-white {
+  --color: #ffffff;
+}
+.basic-03 {
+  --color: #ffbaf3;
 }
 /* --- ネオン --- */
 .neon-01 {

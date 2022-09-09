@@ -2,17 +2,26 @@
 このファイルはメイン画面に適用するスタイルシート 
 ============================================= */
 
-.title-font {
-  color: #fff200;
+.header-background {
+  background-color: #ffbaf3b9;
 }
-.title-ja {
-  color: #ffffff;
+.bg-custom-background {
+  background-color: #ffbaf3;
+  color: #000000;
+}
+/* --- 項目名 --- */
+.title-font {
+  color: #e210e2;
+}
+.title-font, .title-ja {
+  text-align: center;
 }
 /* --- トップエリア --- */
 .top-area {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: #ffffff;
 }
 .event-title-area {
   position: absolute;
@@ -22,7 +31,6 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
 }
 .event-title-area>* {
-  transform: rotateZ(340deg);
   font-size: 10vh;
   font-weight: bold;
   line-height: 1.2;
@@ -35,7 +43,6 @@
   bottom: 0;
   width: 100%;
   height: auto;
-  background-color: #ffffff97;
   color: #000000;
 }
 /* --- 会場広告 --- */
@@ -52,10 +59,10 @@
 /* --- お知らせ --- */
 .news-area {
   padding: 10px;
-  background-color: #3c3c3c;
+  background-color: #ffffff;
 }
 .news-content-area {
-  border: solid 1px #ffffff;
+  border: solid 1px #000000;
   border-radius: 5px;
   background-color: transparent;
 }
@@ -69,19 +76,12 @@
   padding: 20px 10px;
 }
 .topic-content-area:hover {
-  background-color: #9d72ff;
-  color: #ffffff;
+  transition : all 0.5s ease 0s;
+  background-color: #eaff72;
+  color: #ff9e2f;
 }
 .neon-content {
-  border: solid 2px #e210e2;
-  box-shadow:
-    0 0 2px #ffffff,
-    0 0 4px #ffffff,
-    0 0 6px #e210e2,
-    0 0 6px #e210e2,
-    0 0 6px #e210e2,
-    0 0 8px #e210e2,
-    0 0 10px #e210e2;
+  box-shadow: -3px 3px 16px 2px #767676;
 }
 .topic-logo-area>svg {
   width: 40%;
@@ -93,6 +93,5 @@
 }
 /* --- ツイッター --- */
 .twitter-area {
-  background-color: #3c3c3c;
   padding: 10px;
 }
