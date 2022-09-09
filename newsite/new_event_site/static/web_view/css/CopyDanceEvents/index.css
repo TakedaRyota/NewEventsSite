@@ -6,7 +6,7 @@
   background-color: #ffbaf3b9;
 }
 .bg-custom-background {
-  background-color: #ffffff;
+  background-color: #ffbaf3;
   color: #000000;
 }
 /* --- 項目名 --- */
@@ -21,6 +21,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: #ffffff;
 }
 .event-title-area {
   position: absolute;
@@ -58,6 +59,7 @@
 /* --- お知らせ --- */
 .news-area {
   padding: 10px;
+  background-color: #ffffff;
 }
 .news-content-area {
   border: solid 1px #000000;
