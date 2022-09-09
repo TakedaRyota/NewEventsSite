@@ -25,6 +25,16 @@
 .text-color {
   color: var(--color);
 }
+/* --- ベーシック --- */
+.basic-black {
+  --color: #000000;
+}
+.basic-white {
+  --color: #ffffff;
+}
+.basic-03 {
+  --color: #ffbaf3;
+}
 /* --- ネオン --- */
 .neon-01 {
   --color: #ffacfc;
