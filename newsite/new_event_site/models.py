@@ -2,36 +2,7 @@ from unicodedata import name
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
-# Create your models here.
-class PermissionsMaster(models.Model):
-    """権限マスタ
-
-    権限を付与するテーブル
-
-    """
-
-    permission_type = models.CharField(max_length=255)
-
-    class Meta:
-        db_table = 'mst_permissions'
-        
-        
-class UsersMaster(AbstractUser):
-    """ユーザマスタ
-    
-    ユーザマスタテーブルを表すクラス
-    
-    """
-
-    login_id = models.TextField(unique=True)
-    password = models.TextField(unique=False)
-    mail_address = models.TextField(unique=True)
-    user_permissions = models.ForeignKey(PermissionsMaster, on_delete=models.SET_NULL, null=False)
-
-    REQUIRED_FIELDS = ["login_id", "password"]
-
-    class Meta:
-        db_table = 'mst_users'
+# Create your models here.    
 
 class GenresMaster(models.Model):
     """ジャンルマスタ
